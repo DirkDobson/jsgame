@@ -1,0 +1,42 @@
+
+
+.table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  font-size: 2em; 
+}
+#a {
+  border-color: black;
+  border-style: solid;
+  border-left: 3px;
+  border-top: 3px;
+}
+#b {
+  border-color: black;
+  border-style: solid;
+  border-left: 3px;
+  border-top: 3px;
+  border-right: 3px;
+}
+#c {
+  border-color: black;
+  border-style: solid;
+  border-right: 3px;
+  border-top: 3px;
+}
+#d {
+  border-color: black;
+  border-style: solid;
+  border-left: 3px;
+  border-top: 3px;
+  border-bottom: 3px;
+}
+#e {
+  border-color: black;
+  border-style: solid;
+  border: 3px;
+}
