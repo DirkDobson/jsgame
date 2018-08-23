@@ -1,12 +1,9 @@
 
-
 .table {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 90px;
   font-size: 2em; 
 }
 #a {
@@ -32,11 +29,31 @@
   border-color: black;
   border-style: solid;
   border-left: 3px;
-  border-top: 3px;
-  border-bottom: 3px;
 }
 #e {
   border-color: black;
   border-style: solid;
-  border: 3px;
+  border: 3px, 3px, 3px, 3px;
+}
+#f {
+  border-color: black;
+  border-style: solid;
+  border-right: 3px;
+}
+#g {
+  border-color: black;
+  border-style: solid;
+  border-bottom: 3px;
+  border-left: 3px;
+}
+#h {
+  border-color: black;
+  border-style: solid;
+  border-bottom: 3px;
+}
+#i {
+  border-color: black;
+  border-style: solid;
+  border-right: 3px;
+  border-bottom: 3px;
 }
