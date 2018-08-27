@@ -25,7 +25,7 @@ var d1 = 0
 var d2 = 0
 
 aa.addEventListener('click',function() {
-check(aa,a,0)
+check2(a)
 table.sort()
 table.pop()
 cp = cpchoice(cp)
@@ -47,7 +47,7 @@ if (v1 === 3) {
 })
 
 bb.addEventListener('click', function() {
-  check(bb,b,1)
+  check2(b)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -66,7 +66,7 @@ bb.addEventListener('click', function() {
 })
 
 cc.addEventListener('click', function() {
-  check(cc,c,2)
+  check2(c)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -89,7 +89,7 @@ cc.addEventListener('click', function() {
 })
 
 dd.addEventListener('click', function() {
-  check(dd,d,3)
+  check2(d)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -108,7 +108,7 @@ dd.addEventListener('click', function() {
 })
 
 ee.addEventListener('click', function() {
-  check(ee,e,4)
+  check2(e)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -135,7 +135,7 @@ ee.addEventListener('click', function() {
 })
 
 ff.addEventListener('click', function() {
-  check(ff,f,5)
+  check2(f)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -153,7 +153,7 @@ ff.addEventListener('click', function() {
   }
 })
 gg.addEventListener('click', function() {
-  check(gg,g,6)
+  check2(g)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -175,7 +175,7 @@ gg.addEventListener('click', function() {
   }
 })
 hh.addEventListener('click', function() {
-  check(hh,h,7)
+  check2(h)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -193,7 +193,7 @@ hh.addEventListener('click', function() {
   }
 })
 ii.addEventListener('click', function() {
-  check(ii,i,8)
+  check2(i)
   table.sort()
   table.pop()
   cp = cpchoice(cp)
@@ -216,14 +216,14 @@ ii.addEventListener('click', function() {
 })
 
 
-function check(button, array, num) {
-  table.forEach(function() {
-    if (button === array) 
-    user.push(array)
-    array.innerHTML = 'X'
-    delete table[num]
-  })
-}
+// function check(button, array, num) {
+//   table.forEach(function() {
+//     if (button === array) 
+//     user.push(array)
+//     array.innerHTML = 'X'
+//     delete table[num]
+//   })
+// }
 // when button is pressed remove the corrisponding array element
 
 function cpchoice(cp) {
@@ -240,10 +240,11 @@ function cpchoice(cp) {
 // }
 
 
-// function check2(botton, array) {
-//   for(i = 0; i < table.length; i++)
-//   if (array === table[i]) {
-//   delete table[i]
-//  }
-// }
+function check2(array) {
+  for(u = 0; u < table.length; u++)
+  if (array == table[u]) {
+  delete table[u]
+  array.innerHTML = "X"
+ }
+}
 
